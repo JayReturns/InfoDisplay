@@ -1,0 +1,7 @@
++ Uhrzeit
++ Datum
++ Wetter
++ NEWS
++ Forecast Wetter
+? Stundenplan
+~ SAP Aktien
