@@ -36,6 +36,8 @@ function Forecast() {
     if (this.weather) {
       let d = new Date();
       let list = this.weather.list;
+      console.log("list " + list.length === undefined);
+      console.log("this.days " + this.days.length === undefined);
       for (let i = 0; i < list.length && this.days.length < 3; i++) {
         let tmp = list[i].dt_txt;
         let day = int(tmp.substring(8, 10));

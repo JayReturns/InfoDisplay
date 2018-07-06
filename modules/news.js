@@ -33,7 +33,7 @@ function News() {
 
   this.setup = function() {
     if (this.news) {
-      let list = news.children[0].children;
+      let list = this.news.children[0].children;
       let items = [];
       for (let i = 0; i < list.length; i++) {
         if (list[i].name == "item") {

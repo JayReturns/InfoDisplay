@@ -18,10 +18,10 @@ function Weather() {
         textSize(80);
         text(temp + "°", x, y);
         textSize(30);
-        text(desc, x - 100, y + 100);
+        text(desc, x - 150, y + 100);
         textSize(45);
         fill(0, 0, 255);
-        text(tmax, x, y + 60);
+        text(tmax, x - 20, y + 60);
         fill(255, 0, 0);
         text(tmin, x + 50, y + 60);
 

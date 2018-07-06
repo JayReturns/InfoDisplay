@@ -52,7 +52,7 @@ function draw() {
     // shares.display(300, 170);
   } catch (err) {
     // location.reload();
-    console.log(err);
+    console.error(err);
   }
 
   textSize(20);
