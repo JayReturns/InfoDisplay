@@ -6,9 +6,12 @@ let wet;
 let zeitung;
 let forecast;
 let shares;
+let animation;
+let backgroundImage;
 
 function preload() {
   loadAll();
+  backgroundImage = loadImage("images/background.jpg");
 }
 
 function setup() {
@@ -31,6 +34,7 @@ function setup() {
   let cnv = createCanvas(1920, 1080);
   cnv.position(0, 0);
   cnv.parent(main);
+  backgroundImage.resize(width, height);
 }
 
 function mousePressed() {
@@ -42,13 +46,16 @@ function mousePressed() {
 // 1200 x 600
 
 function draw() {
-  background(0);
+  // background(0);
+  // background(backgroundImage);
+  image(backgroundImage, 0, 0, width * 2, height * 2);
   try {
     wet.display(1750, 100);
     forecast.display(1600, 270);
     zeitung.display(960, 800);
     clock.display(100, 200);
     datedisplay.display(50, 75);
+    animation.display(width / 2, 300);
     // shares.display(300, 170);
   } catch (err) {
     // location.reload();
@@ -70,6 +77,7 @@ function loadAll() {
   loadJSON(forecast.path, forecast.gotData);
   shares = new Finances();
   // loadTable(shares.path, "csv", shares.gotData, (x) => console.log(x));
+  animation = new Animation();
 
   console.log("SETUP");
 }

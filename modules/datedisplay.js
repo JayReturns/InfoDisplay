@@ -26,31 +26,33 @@ function DateDisplay() {
   this.getMonth = function() {
     let d = new Date();
     let month = new Array(12);
-    month[0] = "Januar";
-    month[1] = "Februar";
-    month[2] = "März";
-    month[3] = "April";
-    month[4] = "Mai";
-    month[5] = "Juni";
-    month[6] = "Juli";
-    month[7] = "August";
-    month[8] = "September";
-    month[9] = "Oktober";
-    month[0] = "November";
-    month[10] = "Dezember";
+    // Change to your language
+    month[0] = "Januar"; // January
+    month[1] = "Februar"; // February
+    month[2] = "März"; // March
+    month[3] = "April"; // April
+    month[4] = "Mai"; // May
+    month[5] = "Juni"; // June
+    month[6] = "Juli"; // July
+    month[7] = "August"; // August
+    month[8] = "September"; // September
+    month[9] = "Oktober"; // October
+    month[0] = "November"; // November
+    month[10] = "Dezember"; // December
     return month[d.getMonth()];
   }
 
   this.getWeekday = function() {
     let d = new Date();
     let weekday = new Array(7);
-    weekday[0] = "Sonntag";
-    weekday[1] = "Montag";
-    weekday[2] = "Dienstag";
-    weekday[3] = "Mittwoch";
-    weekday[4] = "Donnerstag";
-    weekday[5] = "Freitag";
-    weekday[6] = "Samstag";
+    // Change to your language
+    weekday[0] = "Sonntag"; // Sunday
+    weekday[1] = "Montag"; // Monday
+    weekday[2] = "Dienstag"; // Tuseday
+    weekday[3] = "Mittwoch"; // Wednesday
+    weekday[4] = "Donnerstag"; // Thursday
+    weekday[5] = "Freitag"; // Friday
+    weekday[6] = "Samstag"; // Saturday
     return weekday[d.getDay()];
   }
 

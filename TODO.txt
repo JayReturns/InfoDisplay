@@ -3,5 +3,5 @@
 + Wetter
 + NEWS
 + Forecast Wetter
-? Stundenplan
+? Timetable
 ~ SAP Aktien
